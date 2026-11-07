@@ -37,7 +37,7 @@ jobs:
       run: |
         echo "=== Checking JavaScript files ==="
         find . -name "*.js" -not -path "*/node_modules/*" | while read file; do
-          if ! es-check es2022 "$file"; then
+          if ! es-check es2022 "$file" --module; then
             echo "✗ Syntax error in JS file: $file"
             exit 1
           fi
