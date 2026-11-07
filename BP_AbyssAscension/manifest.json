@@ -4,7 +4,7 @@
     "description": "The Abyss is rising every 30 seconds. Climb or die! - Axiom Studios",
     "name": "Abyss Ascension BP",
     "uuid": "8f7e6d5c-4b3a-2c1d-0e9f-8a7b6c5d4e3f",
-    "version":,
+    "version":[1, 0, 0],
     "min_engine_version": [1, 21, 0]
   },
   "modules": [
@@ -13,7 +13,7 @@
       "type": "script",
       "language": "javascript",
       "uuid": "9a8b7c6d-5e4f-3a2b-1c0d-9e8f7a6b5c4d",
-      "version":,
+      "version":[1, 0, 0],
       "entry": "scripts/main.js"
     }
   ],
