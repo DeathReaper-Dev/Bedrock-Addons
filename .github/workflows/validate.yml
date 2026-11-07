@@ -1,0 +1,45 @@
+name: Bedrock Addon Validator
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-level: '20'
+
+    - name: Install JSON & JS Validators
+      run: npm install -g jsonlint es-check
+
+    - name: Check JSON Manifests and Components
+      run: |
+        echo "=== Checking JSON files ==="
+        find . -name "*.json" -not -path "*/node_modules/*" | while read file; do
+          if ! jsonlint -q "$file"; then
+            echo "✗ Error in JSON file: $file"
+            exit 1
+          fi
+          echo "✓ $file - Valid"
+        done
+
+    - name: Check Bedrock JS Script Syntax
+      run: |
+        echo "=== Checking JavaScript files ==="
+        find . -name "*.js" -not -path "*/node_modules/*" | while read file; do
+          if ! es-check es2022 "$file"; then
+            echo "✗ Syntax error in JS file: $file"
+            exit 1
+          fi
+          echo "✓ $file - Valid"
+        done
