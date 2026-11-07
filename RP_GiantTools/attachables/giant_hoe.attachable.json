@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "axiom:giant_diamond_hoe",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/items/diamond_hoe" },
+      "geometry": { "default": "geometry.giant_hoe" },
+      "scripts": {
+        "pre_animation": [
+          "v.is_first_person = c.is_first_person == 1.0;",
+          "v.scale = 2.5;"
+        ],
+        "animate": [ "giant_hold" ]
+      },
+      "animations": {
+        "giant_hold": "animation.giant_item.hold"
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

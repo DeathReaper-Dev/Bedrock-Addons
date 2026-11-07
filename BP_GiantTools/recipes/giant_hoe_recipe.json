@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:giant_diamond_hoe_recipe" },
+    "tags": [ "crafting_table" ],
+    "pattern": [ "BB ", " S ", " S " ],
+    "key": {
+      "B": { "item": "minecraft:diamond_block" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": { "item": "axiom:giant_diamond_hoe", "count": 1 }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:coal_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [
+      " S ",
+      "SFS",
+      " S "
+    ],
+    "key": {
+      "S": { "item": "minecraft:coal" },
+      "F": { "item": "minecraft:dandelion" }
+    },
+    "result": { "item": "axiom:coal_flower", "count": 1 }
+  }
+}

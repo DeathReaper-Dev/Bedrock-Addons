@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "axiom:giant_diamond_axe",
+      "menu_category": { "category": "equipment", "group": "itemGroup.name.axe" }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:damage": 150,
+      "minecraft:durability": { "max_durability": 1561 },
+      "minecraft:icon": { "texture": "giant_diamond_axe" },
+      "minecraft:display_name": { "value": "§bGiant Dimond Axe" },
+      "minecraft:custom_components": [ "axiom:giant_reach" ]
+    }
+  }
+}

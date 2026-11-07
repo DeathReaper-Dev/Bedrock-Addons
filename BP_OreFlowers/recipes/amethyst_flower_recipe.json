@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:amethyst_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:amethyst_shard" },
+      "F": { "item": "minecraft:allium" }
+    },
+    "result": { "item": "axiom:amethyst_flower", "count": 1 }
+  }
+}

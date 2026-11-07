@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:gold_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:raw_gold" },
+      "F": { "item": "minecraft:dandelion" }
+    },
+    "result": { "item": "axiom:gold_flower", "count": 1 }
+  }
+}

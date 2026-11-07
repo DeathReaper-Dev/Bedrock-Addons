@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:emerald_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:emerald" },
+      "F": { "item": "minecraft:lily_of_the_valley" }
+    },
+    "result": { "item": "axiom:emerald_flower", "count": 1 }
+  }
+}

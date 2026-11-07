@@ -1,0 +1,11 @@
+{
+  "resource_pack_name": "giant_tools",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "giant_diamond_axe": { "textures": "textures/items/giant_diamond_axe" },
+    "giant_diamond_hoe": { "textures": "textures/items/giant_diamond_hoe" },
+    "giant_diamond_pickaxe": { "textures": "textures/items/giant_diamond_pickaxe" },
+    "giant_diamond_shovel": { "textures": "textures/items/giant_diamond_shovel" },
+    "giant_diamond_sword": { "textures": "textures/items/giant_diamond_sword" }
+  }
+}

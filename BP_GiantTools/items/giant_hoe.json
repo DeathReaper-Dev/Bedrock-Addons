@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "axiom:giant_diamond_hoe",
+      "menu_category": { "category": "equipment", "group": "itemGroup.name.hoe" }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:damage": 25,
+      "minecraft:durability": { "max_durability": 1561 },
+      "minecraft:icon": { "texture": "giant_diamond_hoe" },
+      "minecraft:display_name": { "value": "§bGiant Dimond Hoe" },
+      "minecraft:custom_components": [ "axiom:giant_reach" ]
+    }
+  }
+}

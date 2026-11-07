@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:copper_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:raw_copper" },
+      "F": { "item": "minecraft:orange_tulip" }
+    },
+    "result": { "item": "axiom:copper_flower", "count": 1 }
+  }
+}

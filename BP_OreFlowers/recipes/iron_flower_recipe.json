@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:iron_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:raw_iron" },
+      "F": { "item": "minecraft:white_tulip" }
+    },
+    "result": { "item": "axiom:iron_flower", "count": 1 }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:lapis_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:lapis_lazuli" },
+      "F": { "item": "minecraft:cornflower" }
+    },
+    "result": { "item": "axiom:lapis_flower", "count": 1 }
+  }
+}

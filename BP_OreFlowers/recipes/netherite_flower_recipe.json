@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:netherite_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:netherite_scrap" },
+      "F": { "item": "minecraft:torchflower" }
+    },
+    "result": { "item": "axiom:netherite_flower", "count": 1 }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:giant_diamond_shovel_recipe" },
+    "tags": [ "crafting_table" ],
+    "pattern": [ " B ", " S ", " S " ],
+    "key": {
+      "B": { "item": "minecraft:diamond_block" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": { "item": "axiom:giant_diamond_shovel", "count": 1 }
+  }
+}

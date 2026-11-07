@@ -1,0 +1,26 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Items stack up to 64, lose durability, and multiply their attributes! - Axiom Studios",
+    "name": "Atomic Stacks BP",
+    "uuid": "4f8e2d1c-3b5a-4e6f-8a7b-9c0d1e2f3a4b",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "description": "Script Engine Logic",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resource_pack_name": "OreFlowersRP",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "ore_flower_coal": {
+      "textures": "textures/blocks/flower_wither_rose"
+    },
+    "ore_flower_copper": {
+      "textures": "textures/blocks/flower_tulip_orange"
+    },
+    "ore_flower_iron": {
+      "textures": "textures/blocks/flower_tulip_white"
+    },
+    "ore_flower_gold": {
+      "textures": "textures/blocks/flower_dandelion"
+    },
+    "ore_flower_lapis": {
+      "textures": "textures/blocks/flower_cornflower"
+    },
+    "ore_flower_redstone": {
+      "textures": "textures/blocks/flower_rose"
+    },
+    "ore_flower_diamond": {
+      "textures": "textures/blocks/flower_blue_orchid"
+    },
+    "ore_flower_emerald": {
+      "textures": "textures/blocks/flower_lily_of_the_valley"
+    },
+    "ore_flower_amethyst": {
+      "textures": "textures/blocks/flower_allium"
+    },
+    "ore_flower_netherite": {
+      "textures": "textures/blocks/flower_pitcher_pod"
+    }
+  }
+}

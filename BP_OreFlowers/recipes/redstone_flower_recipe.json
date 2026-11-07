@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "axiom:redstone_flower_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [ " S ", "SFS", " S " ],
+    "key": {
+      "S": { "item": "minecraft:redstone" },
+      "F": { "item": "minecraft:poppy" }
+    },
+    "result": { "item": "axiom:redstone_flower", "count": 1 }
+  }
+}
