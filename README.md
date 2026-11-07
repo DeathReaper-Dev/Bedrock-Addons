@@ -7,7 +7,6 @@ Welcome to the official repository of the production-ready Bedrock Add-on bundle
 # 1. Giant Diamond Tools
 * **Concept:** 10x scaled giant diamond tools using native attachable properties.
 * **Stats:** Attack range expanded to 15 blocks. Sword Damage: 100 | Axe Damage: 150.
-* *[Visual: Uses vanilla item geometry with custom hand-pivot offset]*
 
 # 2. Abyss Ascension
 * **Concept:** Hardcore survival minigame engine where a lethal Void Abyss rises every 2 seconds.
