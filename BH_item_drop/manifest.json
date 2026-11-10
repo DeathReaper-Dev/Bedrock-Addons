@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Axiom Dropped Damage",
+    "description": "Выброшенные предметы наносят урон по области. Оптимизировано Axiom Studios.",
+    "uuid": "4f8a3c1e-7b2a-4d9f-ac5e-1a2b3c4d5e6f",
+    "version":,
+    "min_engine_version": [1, 21, 30]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "7b2a4d9f-ac5e-1a2b-3c4d-5e6f4f8a3c1e",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "ac5e1a2b-3c4d-5e6f-4f8a-3c1e7b2a4d9f",
+      "entry": "scripts/main.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    }
+  ]
+}
