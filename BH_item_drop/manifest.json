@@ -4,7 +4,7 @@
     "name": "Axiom Dropped Damage",
     "description": "Выброшенные предметы наносят урон по области. Оптимизировано Axiom Studios.",
     "uuid": "4f8a3c1e-7b2a-4d9f-ac5e-1a2b3c4d5e6f",
-    "version":,
+    "version":[1, 0, 0],
     "min_engine_version": [1, 21, 30]
   },
   "modules": [
