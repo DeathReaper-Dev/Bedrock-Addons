@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Axiom Recipe Chaos",
+    "description": "Майнкрафт, но все крафты рандомны на 100%. Оптимизировано Axiom Studios.",
+    "uuid": "8e3f4a5b-6c7d-8e9f-a0b1-3c4d5e6f7a8b",
+    "version":[1, 0, 0],
+    "min_engine_version": [1, 21, 30]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "9f4a5b6c-7d8e-9f0a-b1c2-4d5e6f7a8b3c",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "a0b1c2d3-e4f5-6a7b-8c9d-5e6f7a8b3c4d",
+      "entry": "scripts/main.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    }
+  ]
+}
