@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Axiom Vein Miner",
+    "description": "Ультимативное разрушение одинаковых блоков. Оптимизировано Axiom Studios.",
+    "uuid": "7d2e4f1a-8c3b-4d9f-ba5e-2b3c4d5e6f7a",
+    "version":[1, 0, 0],
+    "min_engine_version": [1, 21, 30]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "8c3b4d9f-ba5e-2b3c-4d5e-6f7a7d2e4f1a",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "ba5e2b3c-4d5e-6f7a-7d2e-4f1a8c3b4d9f",
+      "entry": "scripts/main.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    }
+  ]
+}
