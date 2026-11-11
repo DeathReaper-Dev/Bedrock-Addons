@@ -2,7 +2,7 @@ import { world, system } from "@minecraft/server";
 
 let currentAbyssY = -64;
 let timerTicks = 0;
-const TIME_INTERVAL = 40; // Бездна поднимается на 1 block каждые 2 секунды (40 тиков)
+const TIME_INTERVAL = 40; // Бездна поднимается на 1 блок каждые 2 секунды (40 тиков)
 
 let worldInitialized = false;
 let barrierCenterX = 0;
@@ -15,11 +15,15 @@ const BORDER_RADIUS = (WORLD_CHUNKS * CHUNK_SIZE) / 2;
 let barrierCurrentY = -64;
 let isGeneratingBarrier = false;
 
+// ИСПРАВЛЕНО: Максимальная высота мира в Bedrock — 319
+const MAX_WORLD_Y = 319;
+
 function tickBarrierGeneration(dimension) {
-    if (barrierCurrentY > 320) {
+    if (barrierCurrentY > MAX_WORLD_Y) {
+        // Ставим крышу строго на Y = 319, где движок реально позволяет ставить блоки
         for (let x = -BORDER_RADIUS; x <= BORDER_RADIUS; x++) {
             for (let z = -BORDER_RADIUS; z <= BORDER_RADIUS; z++) {
-                setBlockOverride(dimension, barrierCenterX + x, 320, barrierCenterZ + z, "minecraft:barrier");
+                setBlockOverride(dimension, barrierCenterX + x, MAX_WORLD_Y, barrierCenterZ + z, "minecraft:barrier");
             }
         }
         
@@ -29,7 +33,7 @@ function tickBarrierGeneration(dimension) {
         return;
     }
 
-    const targetY = Math.min(barrierCurrentY + 15, 321);
+    const targetY = Math.min(barrierCurrentY + 15, MAX_WORLD_Y + 1);
     for (let y = barrierCurrentY; y < targetY; y++) {
         for (let i = -BORDER_RADIUS; i <= BORDER_RADIUS; i++) {
             setBlockOverride(dimension, barrierCenterX + i, y, barrierCenterZ - BORDER_RADIUS, "minecraft:barrier");
@@ -77,7 +81,7 @@ system.runInterval(() => {
         tickBarrierGeneration(playersList[0].dimension);
     }
 
-    // ЭКШЕН-БАР ПОЛНОСТЬЮ УДАЛЕН. Остался только урон для отставших игроков
+    // Урон для отставших игроков
     if (timerTicks % 10 === 0) {
         for (const player of playersList) {
             if (Math.floor(player.location.y) <= currentAbyssY && worldInitialized) {
@@ -86,22 +90,35 @@ system.runInterval(() => {
         }
     }
 
-    if (timerTicks >= TIME_INTERVAL) {
+    // Стираем этаж арены строго ОДИН РАЗ за тик (убран лишний цикл по всем игрокам)
+    if (timerTicks >= TIME_INTERVAL && worldInitialized) {
         timerTicks = 0;
         currentAbyssY++;
 
-        for (const player of playersList) {
-            const dimension = player.dimension;
-            
-            for (let x = -BORDER_RADIUS + 1; x < BORDER_RADIUS; x++) {
-                for (let z = -BORDER_RADIUS + 1; z < BORDER_RADIUS; z++) {
+        // Останавливаем подъем бездны, когда она доходит до потолка
+        if (currentAbyssY >= MAX_WORLD_Y) return;
+
+        const dimension = playersList[0].dimension;
+        
+        // Стираем весь слой одним быстрым запросом через runCommandAsync — это гарантированно сносит воду, лаву и waterlogged блоки без лагов
+        const x1 = barrierCenterX - BORDER_RADIUS + 1;
+        const z1 = barrierCenterZ - BORDER_RADIUS + 1;
+        const x2 = barrierCenterX + BORDER_RADIUS - 1;
+        const z2 = barrierCenterZ + BORDER_RADIUS - 1;
+
+        try {
+            dimension.runCommandAsync(`fill ${x1} ${currentAbyssY} ${z1} ${x2} ${currentAbyssY} ${z2} air replace`);
+        } catch (e) {
+            // Запасной построчный метод, если чанк временно не прогружен
+            for (let x = x1; x <= x2; x++) {
+                for (let z = z1; z <= z2; z++) {
                     try {
-                        const pos = { x: barrierCenterX + x, y: currentAbyssY, z: barrierCenterZ + z };
-                        const block = dimension.getBlock(pos);
+                        const block = dimension.getBlock({ x, y: currentAbyssY, z });
                         if (block && block.typeId !== "minecraft:air" && block.typeId !== "minecraft:barrier" && block.typeId !== "minecraft:bedrock") {
+                            if (block.isWaterlogged) block.setWaterlogged(false);
                             block.setType("minecraft:air");
                         }
-                    } catch (e) {}
+                    } catch (err) {}
                 }
             }
         }
