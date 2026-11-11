@@ -5,7 +5,7 @@
       "identifier": "axiom:giant_diamond_sword",
       "materials": { "default": "entity_alphatest" },
       "textures": { "default": "textures/items/diamond_sword" },
-      "geometry": { "default": "geometry.giant_sword" },
+      "geometry": { "default": "geometry.default" },
       "scripts": {
         "pre_animation": [
           "v.is_first_person = c.is_first_person == 1.0;",
