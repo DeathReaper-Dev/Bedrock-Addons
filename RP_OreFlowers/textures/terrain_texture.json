@@ -20,7 +20,7 @@
       "textures": "textures/blocks/flower_cornflower"
     },
     "ore_flower_redstone": {
-      "textures": "textures/blocks/flower_rose"
+      "textures": "textures/blocks/flower_poppy"
     },
     "ore_flower_diamond": {
       "textures": "textures/blocks/flower_blue_orchid"
@@ -32,7 +32,7 @@
       "textures": "textures/blocks/flower_allium"
     },
     "ore_flower_netherite": {
-      "textures": "textures/blocks/flower_pitcher_pod"
+      "textures": "textures/blocks/flower_torchflower"
     }
   }
 }
