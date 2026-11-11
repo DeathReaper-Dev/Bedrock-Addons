@@ -4,7 +4,7 @@
     "description": "10 Unique Craftable Resource Flowers! - Axiom Studios",
     "name": "Ore Flowers BP",
     "uuid": "7f6e5d4c-3b2a-1c0d-9e8f-7a6b5c4d3e2f",
-    "version":[1, 0, 0][1, 0, 0],
+    "version":[1, 0, 0],
     "min_engine_version":
   },
   "modules": [
