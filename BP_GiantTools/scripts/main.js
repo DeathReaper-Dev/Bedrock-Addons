@@ -53,10 +53,6 @@ world.afterEvents.entitySwingArm.subscribe(function(event) {
         // Игнорируем ошибки при выходе цели из прогрузки
     }
 });
-
-// 2. Регистрация компонента для корректной загрузки JSON-предметов
-import { world } from "@minecraft/server";
-
 if (world.beforeEvents && world.beforeEvents.worldInitialize) {
     world.beforeEvents.worldInitialize.subscribe(function(initEvent) {
         initEvent.itemComponentRegistry.registerCustomComponent("axiom:giant_reach", {
