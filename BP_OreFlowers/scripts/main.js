@@ -23,12 +23,12 @@ const ORE_FLOWER_IDS = Object.keys(ORE_FLOWERS);
 const SCAN_RADIUS    = 12;     // радиус скана (в блоках)
 const SCAN_Y_UP      = 4;      // насколько вверх смотрим
 const SCAN_Y_DOWN    = 4;      // насколько вниз смотрим
-const SPACING        = 2;      // прореживание сетки  [P0] балл 2х2
-const PARTICLE_TICKS = 5;   // 60 с
-const DROP_TICKS     = 10;   // 180 с
+const SPACING        = 1;      // Проверяем КАЖДЫЙ блок без пропусков сетки
+const PARTICLE_TICKS = 3;      // Частицы каждые 3 секунды
+const DROP_TICKS     = 10;     // Дроп руды каждые 10 секунд
 const DROP_CHANCE    = 0.5;
-const CACHE_TTL      = 1300;   // ЖИВЁТ ДОЛЬШЕ, чем интервал обработки
-const CACHE_MAX_AGE  = 600;    // после 30 с скан пересобирается
+const CACHE_MAX_AGE  = 5;      // Пересканируем цветы вокруг игрока каждые 5 секунд!
+  // после 30 с скан пересобирается
 const MAX_DROPS_PER_CYCLE = 24;
 
 const cache = new Map();       // playerId -> { tick, list: [{x,y,z,data}] }
