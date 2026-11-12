@@ -6,7 +6,10 @@
       "bones": {
         "rightItem": {
           "scale": 2.2,
-          "position": [0.0, 1.0, 0.0]
+          "position": [0.0, -2.0, -2.0]
+        },
+        "sword_mesh": {
+          "rotation": [45.0, 0.0, 0.0]
         }
       }
     }

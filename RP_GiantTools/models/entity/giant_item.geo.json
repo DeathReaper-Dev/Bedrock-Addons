@@ -6,21 +6,25 @@
         "identifier": "geometry.giant_item",
         "texture_width": 16,
         "texture_height": 16,
-        "visible_bounds_width": 12,
-        "visible_bounds_height": 12,
-        "visible_bounds_offset": [0.01, 3.0, 0.01]
+        "visible_bounds_width": 16,
+        "visible_bounds_height": 16,
+        "visible_bounds_offset": [0.01, 4.0, 0.01]
       },
       "bones": [
         {
           "name": "rightItem",
+          "pivot": [0.01, 0.01, 0.01]
+        },
+        {
+          "name": "sword_mesh",
+          "parent": "rightItem",
           "pivot": [0.01, 0.01, 0.01],
-          "rotation": [-45, 0.01, 0.01],
           "cubes": [
             {
-              "origin": [-0.25, -4, -28],
+              "origin": [-0.25, -4.0, -4.0],
               "size": [0.5, 32, 32],
               "uv": {
-                "west": { "uv": [0.01, 0.01], "uv_size": [16, 16] },
+                "west": { "uv": [0.01, 0.01], "uv_size": }[16, 16],
                 "east": { "uv": [16, 0.01], "uv_size": [-16, 16] },
                 "north": { "uv": [0.01, 0.01], "uv_size": [0.1, 0.1] },
                 "south": { "uv": [0.01, 0.01], "uv_size": [0.1, 0.1] },
