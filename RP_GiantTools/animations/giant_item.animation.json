@@ -4,8 +4,9 @@
     "animation.giant_item.hold": {
       "loop": true,
       "bones": {
-        "rightitem": {
-          "scale": 3.5
+        "rightItem": {
+          "scale": 3.5,
+          "position": [0.0, 12.0, 0.0]
         }
       }
     }

@@ -3,20 +3,28 @@
   "minecraft:attachable": {
     "description": {
       "identifier": "axiom:giant_diamond_sword",
-      "materials": { "default": "entity_alphatest" },
-      "textures": { "default": "textures/items/diamond_sword" },
-      "geometry": { "default": "geometry.default" },
-      "scripts": {
-        "pre_animation": [
-          "v.is_first_person = c.is_first_person == 1.0;",
-          "v.scale = 2.5;"
-        ],
-        "animate": [ "giant_hold" ]
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/diamond_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.item_default"
       },
       "animations": {
-        "giant_hold": "animation.giant_item.hold"
+        "hold": "animation.giant_item.hold"
       },
-      "render_controllers": [ "controller.render.item_default" ]
+      "scripts": {
+        "animate": [
+          "hold"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
     }
   }
 }
