@@ -9,6 +9,7 @@
       }
     },
     "components": {
+      "minecraft:display_name": "Coal Flower",
       "minecraft:material_instances": {
         "*": {
           "texture": "ore_flower_coal",
