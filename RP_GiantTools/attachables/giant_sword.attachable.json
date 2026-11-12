@@ -12,7 +12,7 @@
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.item_default"
+        "default": "geometry.giant_item"
       },
       "animations": {
         "hold": "animation.giant_item.hold"
