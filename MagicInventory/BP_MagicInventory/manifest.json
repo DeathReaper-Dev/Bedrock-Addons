@@ -1,0 +1,28 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§dМагия Инвентаря §7[BP]",
+    "description": "Каждый предмет, попавший в инвентарь, получает до 4 случайных зачарований",
+    "uuid": "11111111-aaaa-bbbb-cccc-111111111111",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "22222222-aaaa-bbbb-cccc-222222222222",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "33333333-aaaa-bbbb-cccc-333333333333",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    { "module_name": "@minecraft/server", "version": "1.13.0" },
+    { "uuid": "44444444-aaaa-bbbb-cccc-444444444444", "version": [1, 0, 0] }
+  ]
+}
