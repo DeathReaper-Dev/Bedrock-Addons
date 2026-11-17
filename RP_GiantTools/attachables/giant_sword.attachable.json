@@ -15,11 +15,13 @@
         "default": "geometry.giant_item"
       },
       "animations": {
-        "hold": "animation.giant_item.hold"
+        "hold_fp": "animation.giant_item.hold_first_person",
+        "hold_tp": "animation.giant_item.hold_third_person"
       },
       "scripts": {
         "animate": [
-          "hold"
+          { "hold_fp": "c.is_first_person" },
+          { "hold_tp": "!c.is_first_person" }
         ]
       },
       "render_controllers": [
