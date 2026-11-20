@@ -15,8 +15,8 @@
         "default": "geometry.giant_diamond_axe"
       },
       "animations": {
-        "hold_fp": "animation.giant_item.hold_first_person",
-        "hold_tp": "animation.giant_item.hold_third_person"
+        "hold_fp": "animation.giant_axe.hold_first_person",
+        "hold_tp": "animation.giant_axe.hold_third_person"
       },
       "scripts": {
         "animate": [

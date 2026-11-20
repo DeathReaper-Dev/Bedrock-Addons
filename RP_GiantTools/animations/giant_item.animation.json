@@ -6,16 +6,8 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "rotation": [
-            0.0,
-            0.0,
-            0.0
-          ]
+          "position": [0.0, -3.5, -25.5],
+          "rotation": [0.0, 0.0, 0.0]
         }
       }
     },
@@ -24,16 +16,8 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "rotation": [
-            0.0,
-            0.0,
-            0.0
-          ]
+          "position": [0.0, -3.5, -25.5],
+          "rotation": [0.0, 0.0, 0.0]
         }
       }
     },
@@ -42,16 +26,8 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "rotation": [
-            0.0,
-            0.0,
-            0.0
-          ]
+          "position": [0.0, 26.0, 3.0],
+          "rotation": [90.0, 180.0, 0.0]
         }
       }
     },
@@ -60,16 +36,28 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "rotation": [
-            0.0,
-            0.0,
-            0.0
-          ]
+          "position": [0.0, 26.0, 3.0],
+          "rotation": [90.0, 180.0, 0.0]
+        }
+      }
+    },
+    "animation.giant_hoe.hold_first_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "scale": 1.0,
+          "position": [0.0, 26.0, 3.0],
+          "rotation": [90.0, 180.0, 0.0]
+        }
+      }
+    },
+    "animation.giant_hoe.hold_third_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "scale": 1.0,
+          "position": [0.0, 26.0, 3.0],
+          "rotation": [90.0, 180.0, 0.0]
         }
       }
     }
