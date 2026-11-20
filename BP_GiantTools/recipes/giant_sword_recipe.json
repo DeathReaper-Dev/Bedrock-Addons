@@ -26,7 +26,8 @@
       }
     ],
     "result": {
-      "item": "axiom:giant_diamond_sword"
+      "item": "axiom:giant_diamond_sword",
+      "count": 1
     }
   }
 }
