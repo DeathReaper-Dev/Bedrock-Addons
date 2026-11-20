@@ -5,9 +5,17 @@
       "loop": true,
       "bones": {
         "rightItem": {
-          "scale": 1.0,
-          "position": [0.0, -3.5, -25.5],
-          "rotation": [0.0, 0.0, 0.0]
+          "scale": 0.45,
+          "position": [
+            -2.0,
+            -1.5,
+            -11.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     },
@@ -16,8 +24,16 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [0.0, -3.5, -25.5],
-          "rotation": [0.0, 0.0, 0.0]
+          "position": [
+            0.0,
+            -3.5,
+            -25.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     },
@@ -25,9 +41,17 @@
       "loop": true,
       "bones": {
         "rightItem": {
-          "scale": 1.0,
-          "position": [0.0, 26.0, 3.0],
-          "rotation": [90.0, 180.0, 0.0]
+          "scale": 0.45,
+          "position": [
+            -2.0,
+            -1.5,
+            11.5
+          ],
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ]
         }
       }
     },
@@ -36,8 +60,16 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [0.0, 26.0, 3.0],
-          "rotation": [90.0, 180.0, 0.0]
+          "position": [
+            0.0,
+            -3.5,
+            25.5
+          ],
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ]
         }
       }
     },
@@ -45,9 +77,17 @@
       "loop": true,
       "bones": {
         "rightItem": {
-          "scale": 1.0,
-          "position": [0.0, 26.0, 3.0],
-          "rotation": [90.0, 180.0, 0.0]
+          "scale": 0.45,
+          "position": [
+            -2.0,
+            -1.5,
+            11.5
+          ],
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ]
         }
       }
     },
@@ -56,8 +96,16 @@
       "bones": {
         "rightItem": {
           "scale": 1.0,
-          "position": [0.0, 26.0, 3.0],
-          "rotation": [90.0, 180.0, 0.0]
+          "position": [
+            0.0,
+            -3.5,
+            25.5
+          ],
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ]
         }
       }
     }
