@@ -5,12 +5,9 @@
       "loop": true,
       "bones": {
         "rightItem": {
-          "scale": 0.85,
-          "position": [1.5, 2.5, -6.5],
-          "rotation": [10.0, 0.0, -5.0]
-        },
-        "sword_mesh": {
-          "rotation": [45.0, 0.0, 0.0]
+          "scale": 0.45,
+          "position": [-2.0, -4.0, -9.0],
+          "rotation": [45.0, 0.0, -10.0]
         }
       }
     },
@@ -18,10 +15,8 @@
       "loop": true,
       "bones": {
         "rightItem": {
-          "scale": 2.2,
-          "position": [0.0, 0.5, -1.5]
-        },
-        "sword_mesh": {
+          "scale": 1.0,
+          "position": [0.0, -14.0, -4.0],
           "rotation": [45.0, 0.0, 0.0]
         }
       }

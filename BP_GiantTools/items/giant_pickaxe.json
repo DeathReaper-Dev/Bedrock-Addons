@@ -13,7 +13,11 @@
       "minecraft:hand_equipped": true,
       "minecraft:damage": { "value": 40 },
       "minecraft:durability": { "max_durability": 1561 },
-      "minecraft:icon": "diamond_pickaxe",
+      "minecraft:icon": {
+        "textures": {
+          "default": "giant_diamond_pickaxe"
+        }
+      },
       "minecraft:display_name": { "value": "§bGiant Diamond Pickaxe" },
       "minecraft:digger": {
         "use_efficiency": true,

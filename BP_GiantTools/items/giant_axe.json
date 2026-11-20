@@ -13,7 +13,11 @@
       "minecraft:hand_equipped": true,
       "minecraft:damage": { "value": 150 },
       "minecraft:durability": { "max_durability": 1561 },
-      "minecraft:icon": "diamond_axe",
+      "minecraft:icon": {
+        "textures": {
+          "default": "giant_diamond_axe"
+        }
+      },
       "minecraft:display_name": { "value": "§bGiant Diamond Axe" },
       "minecraft:digger": {
         "use_efficiency": true,

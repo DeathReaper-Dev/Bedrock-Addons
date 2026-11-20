@@ -13,7 +13,11 @@
       "minecraft:hand_equipped": true,
       "minecraft:damage": { "value": 25 },
       "minecraft:durability": { "max_durability": 1561 },
-      "minecraft:icon": "diamond_shovel",
+      "minecraft:icon": {
+        "textures": {
+          "default": "giant_diamond_shovel"
+        }
+      },
       "minecraft:display_name": { "value": "§bGiant Diamond Shovel" },
       "minecraft:digger": {
         "use_efficiency": true,
